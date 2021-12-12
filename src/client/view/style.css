@@ -1,0 +1,48 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10%;
+    margin: 0 10%;
+}
+
+#titleLabel {
+    margin: auto;
+    color: #500750;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    background-color: #FAD8F0;
+    padding: 12px;
+}
+
+#postcodeFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldInfoLabel {
+    padding-top: -2px;
+}
+
+.textField {
+    padding: 8px;
+    margin: 0px auto;
+    width: 64%;
+    font-size: 16px;
+    border-style: solid;
+}
+
+#vehicleDropdown {
+    padding: 10px;
+}
+
+#submitButton {
+    background-color: #3665f3; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

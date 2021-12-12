@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ebay Intern Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id=container>
+        <!-- <script src="index.js"></script> -->
+        <h1 id="titleLabel">Delivery Price Check</h1>
+
+        <div id="form">
+            <!-- postcode textfields -->
+            <br>
+            <form id="postcodeFields">
+                <br>
+                <input type="text" class="textField" name="pickupField" placeholder="enter a pickup postcode"><br>
+                <input type="text" class="textField" name="deliveryField" placeholder="enter a delivery postcode">
+            </form>
+            <!-- vehicle dropdown menu -->
+            <br>
+            <form action="#" id="vehicleDropdown">
+                <label for="vehicle">Delivery Vehicle:</label>
+                <select name="vehicles" id="vehicles">
+                    <option value="bicycle">bicycle</option>
+                    <option value="motorbike">motorbike</option>
+                    <option value="parcel car">parcel car</option>
+                    <option value="small van">small van</option>
+                    <option value="large van">large van</option>
+                </select>
+                <br>
+            </form>
+
+            <!-- submit button -->
+            <button id="submitButton">Check</button>
+            
+        </div>
+        <div id="response">
+            <h2></h2>
+        </div>
+    </div>
+</body>
+</html>
