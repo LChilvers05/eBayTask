@@ -8,6 +8,7 @@ public class Quote {
     String pickupPostcode;
     @JsonProperty("delivery_postcode")
     String deliveryPostcode;
+    String vehicle;
     Long price;
 
     public Quote() {}
@@ -17,14 +18,27 @@ public class Quote {
         this.deliveryPostcode = deliveryPostcode;
     }
 
+    public Quote(String pickupPostcode, String deliveryPostcode, String vehicle) {
+        this.pickupPostcode = pickupPostcode;
+        this.deliveryPostcode = deliveryPostcode;
+        this.vehicle = vehicle;
+    }
+
     public Quote(String pickupPostcode, String deliveryPostcode, Long price) {
         this.pickupPostcode = pickupPostcode;
         this.deliveryPostcode = deliveryPostcode;
         this.price = price;
     }
 
+    public Quote(String pickupPostcode, String deliveryPostcode, String vehicle, Long price) {
+        this.pickupPostcode = pickupPostcode;
+        this.deliveryPostcode = deliveryPostcode;
+        this.vehicle = vehicle;
+        this.price = price;
+    }
+
     public String getPickupPostcode() {
-        return this.pickupPostcode;
+        return pickupPostcode;
     }
 
     public void setPickupPostcode(String pickupPostcode) {
@@ -32,15 +46,23 @@ public class Quote {
     }
 
     public String getDeliveryPostcode() {
-        return this.deliveryPostcode;
+        return deliveryPostcode;
     }
 
     public void setDeliveryPostcode(String deliveryPostcode) {
         this.deliveryPostcode = deliveryPostcode;
     }
 
+    public String getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(String vehicle) {
+        this.vehicle = vehicle;
+    }
+
     public Long getPrice() {
-        return this.price;
+        return price;
     }
 
     public void setPrice(Long price) {
