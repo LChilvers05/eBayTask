@@ -1,5 +1,8 @@
 package com.shutl.model;
 
+/**
+ * Singleton class to calculate a new price based on the vehicle used for delivery
+ */
 public class PriceCalculator {
 
     public enum VehicleType {
@@ -16,7 +19,13 @@ public class PriceCalculator {
         return sharedInstance;
     }
 
-    public Long getPriceWithVehicle(Long price, String vehicle) {
+    /**
+     * 
+     * @param price the original base price before calculation
+     * @param vehicle description of delivery vehicle
+     * @return the new price of delivery
+     */
+    public Long calulatePrice(Long price, String vehicle) {
         VehicleType type = VehicleType.valueOf(vehicle);
         
         float markup;

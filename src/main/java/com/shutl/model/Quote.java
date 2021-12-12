@@ -13,29 +13,33 @@ public class Quote {
 
     public Quote() {}
 
-    public Quote(String pickupPostcode, String deliveryPostcode) {
-        this.pickupPostcode = pickupPostcode;
-        this.deliveryPostcode = deliveryPostcode;
-    }
-
+    /**
+     * Constructor used to instantiate request object
+     * @param pickupPostcode the postcode the package is picked up
+     * @param deliveryPostcode the postcode the package is delivered to
+     * @param vehicle
+     */
     public Quote(String pickupPostcode, String deliveryPostcode, String vehicle) {
         this.pickupPostcode = pickupPostcode;
         this.deliveryPostcode = deliveryPostcode;
         this.vehicle = vehicle;
     }
 
-    public Quote(String pickupPostcode, String deliveryPostcode, Long price) {
-        this.pickupPostcode = pickupPostcode;
-        this.deliveryPostcode = deliveryPostcode;
-        this.price = price;
-    }
-
+    /**
+     * Constructor used to instantiate response object
+     * @param pickupPostcode the postcode the package is picked up
+     * @param deliveryPostcode the postcode the package is delivered to
+     * @param vehicle the description of delivery vehicle
+     * @param price the final price of delivery
+     */
     public Quote(String pickupPostcode, String deliveryPostcode, String vehicle, Long price) {
         this.pickupPostcode = pickupPostcode;
         this.deliveryPostcode = deliveryPostcode;
         this.vehicle = vehicle;
         this.price = price;
     }
+
+    //getters and setters
 
     public String getPickupPostcode() {
         return pickupPostcode;
