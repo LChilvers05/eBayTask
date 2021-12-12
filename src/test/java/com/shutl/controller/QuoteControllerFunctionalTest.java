@@ -36,6 +36,8 @@ public class QuoteControllerFunctionalTest {
         this.mockMvc = webAppContextSetup(this.webApplicationContext).build();
     }
 
+    //TODO: Write tests to check that maths for all vehicle types works
+
     @Test
     public void testBasicService() throws Exception {
         // Quote quoteData = new Quote("SW1A1AA", "EC2A3LT");
