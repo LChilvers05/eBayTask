@@ -1,18 +1,29 @@
+.label {
+    font-family: Arial, sans-serif;
+    color: #707070;
+}
+
 #container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10%;
+    padding: 2% 4%;
     margin: 0 10%;
 }
 
+#logo {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+}
+
 #titleLabel {
-    margin: auto;
+    margin: 0 auto;
     color: #500750;
-    font-size: 48px;
-    font-family: Arial, sans-serif;
+    font-size: 40px;
     background-color: #FAD8F0;
     padding: 12px;
+    width: 70%;
 }
 
 #postcodeFields {
@@ -20,24 +31,25 @@
     flex-direction: column;
 }
 
-.fieldInfoLabel {
-    padding-top: -2px;
-}
-
 .textField {
     padding: 8px;
     margin: 0px auto;
-    width: 64%;
+    width: 70%;
     font-size: 16px;
     border-style: solid;
 }
 
-#vehicleDropdown {
-    padding: 10px;
+#dropdownContainer {
+    margin: 0px auto;
+    width: 70%;
 }
 
-#submitButton {
-    background-color: #3665f3; /* Green */
+#vehicleDropdown {
+    padding: 4px;
+}
+
+#checkButton {
+    background-color: #3665f3;
     border: none;
     color: white;
     padding: 12px 40px;
@@ -45,4 +57,13 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+#resultLabel {
+    font-size: 20px;
+    color: #07522C;
+    background-color: #9df4a6;
+    padding: 4px;
+    margin: 0px auto;
+    width: 70%;
 }

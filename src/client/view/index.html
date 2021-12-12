@@ -10,40 +10,47 @@
 </head>
 
 <body>
-
     <div id=container>
-        <!-- <script src="index.js"></script> -->
-        <h1 id="titleLabel">Delivery Price Check</h1>
-
+        <!-- logo and title -->
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/48/EBay_logo.png" alt="">
+        <h1 class="label" id="titleLabel">Delivery Price Check</h1>
         <div id="form">
             <!-- postcode textfields -->
             <br>
             <form id="postcodeFields">
-                <br>
-                <input type="text" class="textField" name="pickupField" placeholder="enter a pickup postcode"><br>
-                <input type="text" class="textField" name="deliveryField" placeholder="enter a delivery postcode">
+                <input type="text" onkeyup="getPrice()" class="textField" id="pickupField" name="pickupField"
+                    placeholder="enter a pickup postcode"><br>
+                <input type="text" onkeyup="getPrice()" class="textField" id="deliveryField" name="deliveryField"
+                    placeholder="enter a delivery postcode">
             </form>
             <!-- vehicle dropdown menu -->
             <br>
-            <form action="#" id="vehicleDropdown">
-                <label for="vehicle">Delivery Vehicle:</label>
-                <select name="vehicles" id="vehicles">
-                    <option value="bicycle">bicycle</option>
-                    <option value="motorbike">motorbike</option>
-                    <option value="parcel car">parcel car</option>
-                    <option value="small van">small van</option>
-                    <option value="large van">large van</option>
-                </select>
-                <br>
-            </form>
+            <div id="dropdownContainer">
+                <form id="vehicleDropdown">
+                    <label class="label" for="vehicles">Delivery Vehicle:</label>
+                    <select name="vehicles" id="vehicles">
+                        <option value="bicycle">bicycle</option>
+                        <option value="motorbike">motorbike</option>
+                        <option value="parcel car">parcel car</option>
+                        <option value="small van">small van</option>
+                        <option value="large van">large van</option>
+                    </select>
+                    <br>
+                </form>
+            </div>
 
             <!-- submit button -->
-            <button id="submitButton">Check</button>
-            
+            <br>
+            <input id="checkButton" type="button" value="Check" />
+
         </div>
+        <!-- result label -->
+        <br>
         <div id="response">
-            <h2></h2>
+            <h2 class="label" id="resultLabel"></h2>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
