@@ -137,3 +137,6 @@ To help you with selecting compatible Java and Gradle versions, please check htt
 For help with SpringBoot this is a good starting point: https://www.marcobehler.com/guides/spring-and-spring-boot-versions
 
 This project can be run with Java 11 and Gradle 7.0
+
+# eBay take home exercise
+
