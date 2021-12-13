@@ -21,6 +21,7 @@ Following this, I would make Vehicle an abstract class and define each vehicle t
 
 
 ## Task 2
+index.html can be found at src/client/view  
 Keeping in mind the time guidline, my interface consists of a simple form with two text fields to input the postcodes, and a drop-down menu to select from a choice of delivery vehicles.  The result label will automatically update as the user updates their input. There is a button to manually check the delivery price, however its main function is to highlight where the user has entered invalid input.
 
 The result label will display "error" if there is an issue with the API.
