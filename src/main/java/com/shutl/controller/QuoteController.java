@@ -17,9 +17,8 @@ public class QuoteController {
 
     @RequestMapping(value = "/quote", method = POST)
     public @ResponseBody Quote quote(@RequestBody Quote quote) {
-        Long price = Math.abs((Long.valueOf(quote.getDeliveryPostcode(), 36) - Long.valueOf(quote.getPickupPostcode(), 36))/100000000);
-
-        price = PriceCalculator.shared().calulatePrice(price, quote.getVehicle());
+        
+        Long price = PriceCalculator.shared().calulatePrice(quote);
         
         return new Quote(quote.getPickupPostcode(), quote.getDeliveryPostcode(), quote.getVehicle(), price);
     }

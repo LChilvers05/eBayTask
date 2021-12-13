@@ -19,7 +19,10 @@ function validationChecks() {
 
     var p = pickupField.value, d = deliveryField.value;
 
-    if (!(p != "" && (p.length >= 5 && p.length <= 8))) {
+    //check no special characters are in postcode
+    var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+    if (!(p != "" && (p.length >= 5 && p.length <= 8) && !format.test(p))) {
         flag = true;
         //to check if button was pushed instead of automatic update
         if (manualCheck) {
@@ -27,7 +30,7 @@ function validationChecks() {
             pickupField.style.backgroundColor = "#ffa8a8";
         }
     }
-    if (!(d != "" && (d.length >= 5 && d.length <= 8))) {
+    if (!(d != "" && (d.length >= 5 && d.length <= 8) && !format.test(d))) {
         flag = true;
         if (manualCheck) {
             deliveryField.style.backgroundColor = "#ffa8a8";
