@@ -31,6 +31,7 @@ public class PriceCalculator {
      * @return the final price of the delivery
      */
     public Long calulatePrice(Quote quote) {
+        
         Long price = Math.abs((Long.valueOf(quote.getDeliveryPostcode(), 36) - Long.valueOf(quote.getPickupPostcode(), 36))/100000000);
         String vehicle = quote.getVehicle();
 
