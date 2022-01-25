@@ -1,4 +1,4 @@
-package com.shutl.model;
+package com.shutl.services;
 
 public class MarkupService {
 

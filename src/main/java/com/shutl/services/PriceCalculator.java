@@ -1,7 +1,6 @@
 package com.shutl.services;
 
 import com.shutl.model.Quote;
-import com.shutl.model.MarkupService;
 
 /**
  * Singleton class to calculate a new price based on the vehicle used for
